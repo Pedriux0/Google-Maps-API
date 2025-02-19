@@ -1,0 +1,45 @@
+/*// StAuth10244: I Juan Naranjo , 000895164 certify that this material is my original work. No other person's work has been used without due acknowledgement. I have not made my work available to anyone else.*/
+
+#map {
+    height: 800px; 
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+#filter-parks,#filter-museums,#filter-restaurants,#filter-all,#geolocation-btn{
+    height: 60px;
+}
+
+/* Styles of the page */
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+
+  .map-container {
+    
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .controls {
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+  }
+  
+  .btn {
+    margin-bottom: 10px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .map-container {
+      height: 300px;
+    }
+  
+    .controls {
+      margin-top: 20px;
+    }
+  }

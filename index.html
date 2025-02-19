@@ -1,0 +1,80 @@
+<!--// StAuth10244: I Juan Naranjo , 000895164 certify that this material is my original work. No other person's work has been used without due acknowledgement. I have not made my work available to anyone else.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Explore Hamilton</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container-fluid">
+    <!-- Header -->
+    <header class="bg-primary text-white text-center py-3">
+      <h1>Explore Hamilton</h1>
+      <p class="lead">Discover parks, museums, and restaurants in Hamilton</p>
+    </header>
+
+    <!-- Main Content -->
+    <div class="row mt-3">
+      <!-- Map Column -->
+      <div class="col-md-8">
+        <div id="map" class="map-container"></div>
+      </div>
+
+      <!-- Controls Column -->
+      <div class="col-md-4">
+        <div class="controls p-3 bg-light rounded">
+          <!-- Filter Buttons -->
+          <div class="mb-3">
+            <h4>Filter Markers</h4>
+            <button id="filter-parks" class="btn btn-outline-primary w-100 mb-2">Show Parks</button>
+            <button id="filter-museums" class="btn btn-outline-primary w-100 mb-2">Show Museums</button>
+            <button id="filter-restaurants" class="btn btn-outline-primary w-100 mb-2">Show Restaurants</button>
+            <button id="filter-all" class="btn btn-outline-secondary w-100 mb-2">Show All</button>
+          </div>
+
+          <!-- Geolocation Button -->
+          <div class="mb-3">
+            <h4>My Location</h4>
+            <button id="geolocation-btn" class="btn btn-success w-100">Show My Location</button>
+          </div>
+
+          <!-- Add New Marker Form -->
+          <div class="mb-3">
+            <h4>Add New Marker</h4>
+            <form id="add-marker-form">
+              <input type="text" id="address" placeholder="Enter Address" class="form-control mb-2" required>
+              <input type="text" id="name" placeholder="Enter Name" class="form-control mb-2" required>
+              <select id="category" class="form-select mb-2">
+                <option value="Park">Park</option>
+                <option value="Museum">Museum</option>
+                <option value="Restaurant">Restaurant</option>
+              </select>
+              <button type="submit" class="btn btn-warning w-100">Add Marker</button>
+            </form>
+          </div>
+
+          <!-- Directions -->
+          <div class="mb-3">
+            <h4>Get Directions</h4>
+            <select id="destination" class="form-select mb-2">
+              <option value="">Select Destination</option>
+              <!-- Options will be populated dynamically -->
+            </select>
+            <button id="get-directions" class="btn btn-info w-100">Get Directions</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Google Maps API -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=&loading=async&libraries=marker&map_ids="></script>
+  <!-- Custom JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
