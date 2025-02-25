@@ -16,20 +16,23 @@ This project is a web application that integrates Google Maps API to provide loc
 - Bootstrap
 
 ## Setup Instructions
-1. Clone this repository:
+
+0. Include your own ID and Key
+   
+2. Clone this repository:
    ```sh
    git clone https://github.com/yourusername/Google-Maps-API.git
    cd Google-Maps-API
    ```
-2. Create a `.env` file in the root directory and add your Google Maps API key:
+3. Create a `.env` file in the root directory and add your Google Maps API key:
    ```env
    REACT_APP_GOOGLE_MAPS_API_KEY=your_api_key_here
    ```
-3. Install dependencies (if applicable):
+4. Install dependencies (if applicable):
    ```sh
    npm install
    ```
-4. Run the application:
+5. Run the application:
    ```sh
    npm start
    ```
@@ -39,6 +42,7 @@ This project is a web application that integrates Google Maps API to provide loc
 - Restrict API usage in the [Google Cloud Console](https://console.cloud.google.com/):
   - HTTP referrer restriction (for frontend use)
   - IP restriction (for backend use)
+
 
 ## License
 This project is licensed under the MIT License.
