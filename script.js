@@ -32,7 +32,7 @@ function initMap() {
     map = new google.maps.Map(document.getElementById("map"), {
       center: { lat: 43.2557, lng: -79.8711 }, // Hamilton coordinates
       zoom: 12,
-      mapId: "", 
+      mapId: "5471da34b982e556", 
     });
   
     // Initialize directions service and renderer
